@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K2341111E_Mobile</string>
+    <string name="str_welcome">CHÀO MỪNG ĐẾN ANDROID</string>
+    <string name="str_clickme">Nhấn vào</string>
+    <string name="str_login_title">Đăng nhập hệ thống</string>
+    <string name="str_username">Tên người dùng</string>
+    <string name="str_hint_username">Nhập tên người dùng</string>
+    <string name="str_password">Mật khẩu</string>
+    <string name="str_hint_password">Nhập mật khẩu</string>
+    <string name="str_login">Đăng nhập</string>
+    <string name="str_exit">Thoát</string>
+    <string name="str_login_success">Đăng nhập thành công!</string>
+    <string name="str_login_failed">Đăng nhập thất bại</string>
+</resources>
