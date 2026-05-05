@@ -12,4 +12,12 @@
     <string name="str_exit">Thoát</string>
     <string name="str_login_success">Đăng nhập thành công!</string>
     <string name="str_login_failed">Đăng nhập thất bại</string>
+    <string name="str_mc">MC</string>
+    <string name="str_mr">MR</string>
+    <string name="str_m_plus">M+</string>
+    <string name="str_m_minus">M-</string>
+    <string name="str_ms">MS</string>
+    <string name="str_m">M</string>
+    <string name="str_openCalculatorApp">Mở Ứng Dụng Máy Tính</string>
+    <string name="str_close">Đóng</string>
 </resources>

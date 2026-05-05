@@ -1,5 +1,6 @@
 package com.lethimyhoa.k2341111e_mobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -29,5 +30,15 @@ public class MainActivity extends AppCompatActivity {
 //        tất cả moi thứ phát sinh ra lớp R
         String welcome = getString(R.string.str_welcome);
         Toast.makeText(this, welcome, Toast.LENGTH_LONG).show();
+    }
+
+    public void openCalculatorApp(View view) {
+        Intent intent = new Intent(this, CalculatorActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void close_app(View view) {
+        finish();
     }
 }

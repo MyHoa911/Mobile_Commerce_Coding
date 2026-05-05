@@ -23,8 +23,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.K2341111E_Mobile">
         <activity
+            android:name=".CalculatorActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
-            android:exported="true" >
+            android:exported="true">
+
             <!-- Main Action cho phép Login chạy đầu tiên, exported ='true' -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,9 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
