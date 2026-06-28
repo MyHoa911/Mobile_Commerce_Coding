@@ -1,5 +1,6 @@
 package com.lethimyhoa.k2341111e_mobile;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ public class CalculatorActivity extends AppCompatActivity {
     EditText edtFormula;
     TextView txtMC, txtMR, txtMPlus, txtMMinus, txtMS, txtM;
     View.OnClickListener click_m_listener;
+    String shared_pref_key = "Calculator_Storage";
     double memoryValue = 0;
 
     @Override
@@ -331,4 +333,30 @@ public class CalculatorActivity extends AppCompatActivity {
         }
         return result;
     }
+
+    //  hàm onPause để lưu dữ liệu khi thoát app
+    @Override
+    protected void onPause() {
+        super.onPause();
+        SharedPreferences preferences = getSharedPreferences(shared_pref_key, MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("LastFormula", edtFormula.getText().toString());
+        editor.apply();
+    }
+
+    // hàm onResume để khôi phục dữ liệu khi mở lại app
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences preferences = getSharedPreferences(shared_pref_key, MODE_PRIVATE);
+        String lastFormula = preferences.getString("LastFormula", "");
+
+        if (!lastFormula.isEmpty()) {
+            edtFormula.setText(lastFormula);
+            edtFormula.setSelection(edtFormula.getText().length());
+        }
+    }
+
+
+
 }

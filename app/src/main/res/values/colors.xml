@@ -4,4 +4,20 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#DBCC3D</color>
     <color name="pink">#EBCCCC</color>
+    <color name="order_completed">#1336BC</color>
+    <color name="order_not_yet_payment">#FF0000</color>
+    <color name="order_going_logistics">#70A443</color>
+    <color name="order_customer_complain">#9C27B0</color>
+
+    <!-- Wine Red Theme -->
+    <color name="wine_red">#722F37</color>
+    <color name="wine_red_dark">#4E1A1F</color>
+    <color name="wine_red_light">#9A4A53</color>
+    <color name="gray_light">#F5F5F5</color>
+
+    <!-- Firebase Blue Theme -->
+    <color name="blue_primary">#1976D2</color>
+    <color name="blue_dark">#1565C0</color>
+    <color name="blue_light">#E3F2FD</color>
+    <color name="bg_light">#F5F7FA</color>
 </resources>

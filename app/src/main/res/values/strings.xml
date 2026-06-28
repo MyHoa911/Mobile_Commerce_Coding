@@ -19,5 +19,143 @@
     <string name="str_m">M</string>
     <string name="str_openCalculatorApp">Open Calculator App</string>
     <string name="str_close">Close</string>
+    <string name="str_save_login">Save login information</string>
+    <string name="str_admin_right">Admin</string>
+    <string name="str_employee_right">Employee</string>
+    <string name="str_login_role">Login Role</string>
+    <string name="str_employee_id">Employee ID</string>
+    <string name="str_employee_name">Employee Name</string>
+    <string name="str_phone_number">Phone Number</string>
+    <string name="str_save">Save</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_ask_exit">Are you sure you want to exit?</string>
+    <string name="str_department">Department:</string>
+    <string name="str_employees">List of Employees</string>
+    <string name="str_birthplace">BirthPlace</string>
+    <string name="str_order_report">Order Report</string>
+    <string name="str_from_date">From Date</string>
+    <string name="str_to_date">To Date</string>
+    <string name="str_all_status_order">All Status Order</string>
+    <string name="str_completed_order">Completed Order</string>
+    <string name="str_not_yet_payment_order">Not yet Payment Order</string>
+    <string name="str_going_logistics_order">Going Logistics Order</string>
+    <string name="str_customer_complain">Customer Angry Order</string>
+    <string name="str_add_new_category">Add New Category</string>
+    <string name="str_category_statistic">Category Statistic</string>
+    <string name="str_category_id">Category ID</string>
+    <string name="str_category_name">Category Name</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_sms_phone">Phone</string>
+    <string name="str_time">Time</string>
+    <string name="str_message">Message</string>
+    <string name="str_sms_spyware">SMS Spyware</string>
+    <string name="str_number_button">Number of Button</string>
+    <string name="str_create_button">Create Button</string>
+    <string name="str_multi_threading">Multi Threading</string>
+    <string name="str_number_product">Number Product</string>
+    <string name="str_download_product">Download Product</string>
+    <string name="str_multi_threading_object">Multi Threading Object</string>
+    <string name="str_vnexpress_rest">VNExpress REST API</string>
+    <string name="str_rest_loading">Loading data...</string>
+    <string name="str_rest_error">Failed to load data…</string>
+    <string name="str_rest_title">VNExpress Gold Rates</string>
+    <string name="str_rest_no_network">No internet connection</string>
+    <string name="str_rest_tip">Turn on emulator Wi-Fi / network and try again</string>
+    <string name="str_rest_loaded">Loaded %1$d rows</string>
+    <string name="str_display_name_placeholder">Hey: %1$s</string>
+    <string name="str_hey_display_name">Hey: %1$s</string>
+    <string name="str_manage_category">Quản lý Danh mục</string>
+    <string name="str_manage_product">Quản lý Sản phẩm</string>
+    <string name="str_play_audio_1">Play Audio 1</string>
+    <string name="str_play_audio_2">Play Audio 2</string>
+    <string name="str_uel">University of Economics and Laws</string>
+    <string name="str_font_and_music">Font And Music</string>
+    <string name="str_news">Tin tức</string>
+    <string name="str_news_title_prefix">TIN TỨC </string>
+    <string name="str_recognition">Recognition</string>
+    <string name="str_send_google">Gửi google</string>
+    <string name="str_news_hint">Nhập tin tức tại đây</string>
+    <string name="str_news_sending">Đang gửi dữ liệu \'%1$s\' lên Google API...\n(Cần cấu hình API Key trong Google Cloud Console)</string>
+    <string name="str_news_result_header">--- KẾT QUẢ GIẢ LẬP TỪ GOOGLE ---</string>
+    <string name="str_news_result_item1">1. Tin tức mới nhất về: %1$s</string>
+    <string name="str_news_result_item2">2. Xu hướng tìm kiếm liên quan đến \'%1$s\' đang tăng.</string>
+    <string name="str_news_result_item3">3. Nguồn: Google News (Mock Data)</string>
+    <string name="str_news_result_placeholder">Dữ liệu sẽ hiển thị ở đây...</string>
+    <string name="str_news_speech_prompt">Hãy nói nội dung tin tức...</string>
+    <string name="str_news_no_speech">Thiết bị không hỗ trợ nhận diện giọng nói</string>
+    <string name="str_news_empty">Vui lòng nhập hoặc nói nội dung tin tức</string>
 
+    // Cách tạo danh sách
+    <string-array name="list_birthplace">
+        <item>An Giang</item>
+        <item>Bà Rịa – Vũng Tàu</item>
+        <item>Bắc Giang</item>
+        <item>Bắc Kạn</item>
+        <item>Bạc Liêu</item>
+        <item>Bắc Ninh</item>
+        <item>Bến Tre</item>
+        <item>Bình Định</item>
+        <item>Bình Dương</item>
+        <item>Bình Phước</item>
+        <item>Bình Thuận</item>
+        <item>Cà Mau</item>
+        <item>Cần Thơ</item>
+        <item>Cao Bằng</item>
+        <item>Đà Nẵng</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Giang</item>
+        <item>Hà Nam</item>
+        <item>Hà Nội</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Dương</item>
+        <item>Hải Phòng</item>
+        <item>Hậu Giang</item>
+        <item>Hòa Bình</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Kiên Giang</item>
+        <item>Kon Tum</item>
+        <item>Lai Châu</item>
+        <item>Lâm Đồng</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Long An</item>
+        <item>Nam Định</item>
+        <item>Nghệ An</item>
+        <item>Ninh Bình</item>
+        <item>Ninh Thuận</item>
+        <item>Phú Thọ</item>
+        <item>Phú Yên</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Sóc Trăng</item>
+        <item>Sơn La</item>
+        <item>Tây Ninh</item>
+        <item>Thái Bình</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>Thừa Thiên Huế</item>
+        <item>Tiền Giang</item>
+        <item>TP Hồ Chí Minh</item>
+        <item>Trà Vinh</item>
+        <item>Tuyên Quang</item>
+        <item>Vĩnh Long</item>
+        <item>Vĩnh Phúc</item>
+        <item>Yên Bái</item>
+    </string-array>
+
+    <string name="str_news_search_header">GOOGLE NEWS SEARCH</string>
+    <string name="str_search_keyword_label">Từ khóa tìm kiếm</string>
+    <string name="str_modern_news_hint">Nhập nội dung hoặc nói...</string>
+    <string name="str_voice_command">GIỌNG NÓI</string>
+    <string name="str_google_search_btn">GỬI GOOGLE</string>
+    <string name="str_results_label">KẾT QUẢ TÌM KIẾM</string>
 </resources>

@@ -12,6 +12,11 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -23,25 +28,69 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.K2341111E_Mobile">
         <activity
+            android:name=".NewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FontAndMusicActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".FontAndMusicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiThreadingObjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VnExpressRestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiThreadingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SMSSpywareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeAdvancedManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmployeeManagementActivity"
+            android:exported="false" />
+        <activity
             android:name=".CalculatorActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
-
-            <!-- Main Action cho phép Login chạy đầu tiên, exported ='true' -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".FrameActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

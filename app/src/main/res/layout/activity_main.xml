@@ -5,48 +5,115 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F7FA"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/str_welcome" />
+    <!-- Giữ nguyên Status Indicator cũ nhưng đổi màu cho khớp theme -->
+    <View
+        android:id="@+id/statusIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#4CAF50" />
 
-    <Button
-        android:id="@+id/button"
+    <!-- Header được làm đẹp với màu Xanh biển -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="click_me"
-        android:text="@string/str_clickme" />
+        android:background="#1976D2"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="openCalculatorApp"
-        android:text="@string/str_openCalculatorApp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_welcome"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="close_app"
-        android:text="@string/str_close" />
-
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="30dp">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/txtDisplayName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginTop="4dp"
+            android:background="#33FFFFFF"
+            android:padding="8dp"
+            android:text="@string/str_display_name_placeholder"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 
-        </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    </ScrollView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUsers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="8dp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/tvEmptyState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Không có người dùng nào. Hãy thêm mới!"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Khu vực nút bấm Firebase được thiết kế lại đẹp hơn -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/btnAddUser"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1976D2"
+            android:text="THÊM USER (FIREBASE)"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="8dp" />
+
+        <!-- Khôi phục đầy đủ các nút chức năng cũ của bạn -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button android:id="@+id/btnCalc" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openCalculatorApp" android:text="CALC" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnCat" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openCategoryActivity" android:text="CATEGORY" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnProd" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openProductActivity" android:text="PRODUCT" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnNewsMain" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openNewsActivity" android:text="NEWS" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnSpy" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openSmsSpyware" android:text="SMS SPY" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnThread" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openMultiThreadingObject" android:text="THREAD" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnRest" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openVnExpressRest" android:text="REST API" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnMusic" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="openFontAndMusic" android:text="MUSIC" android:textColor="#1976D2" />
+                <Button android:id="@+id/btnClose" style="@style/Widget.MaterialComponents.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:onClick="close_app" android:text="CLOSE" android:textColor="#F44336" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
 
 </LinearLayout>

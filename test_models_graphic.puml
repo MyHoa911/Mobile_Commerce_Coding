@@ -1,0 +1,176 @@
+@startuml
+class com.lethimyhoa.models.Department {
+- String departmentId
+- String departmentName
+- ArrayList<Employee> listOfEmployees
++ String getDepartmentId()
++ void setDepartmentId(String)
++ String getDepartmentName()
++ void setDepartmentName(String)
++ String toString()
++ void addEmployee(Employee)
++ void addListEmployee(ArrayList<Employee>)
++ ArrayList<Employee> getListOfEmployees()
+}
+
+
+class com.lethimyhoa.models.Employee {
+- String employeeId
+- String employeeName
+- String phoneNumber
+- String birthdayPlace
++ String getBirthdayPlace()
++ void setBirthdayPlace(String)
++ String getEmployeeId()
++ void setEmployeeId(String)
++ String getEmployeeName()
++ void setEmployeeName(String)
++ String getPhoneNumber()
++ void setPhoneNumber(String)
++ String toString()
+}
+
+
+class com.lethimyhoa.models.Product {
+- String productId
+- String productName
+- double price
+- int quantity
+- double coupon
+- double VAT
+- String categoryId
++ String getProductId()
++ void setProductId(String)
++ String getProductName()
++ void setProductName(String)
++ double getPrice()
++ void setPrice(double)
++ int getQuantity()
++ void setQuantity(int)
++ double getCoupon()
++ void setCoupon(double)
++ double getVAT()
++ void setVAT(double)
++ String getCategoryId()
++ void setCategoryId(String)
++ String toString()
+}
+
+
+class com.lethimyhoa.models.ListUserAccount {
++ {static} ArrayList<UserAccount> listUserAccounts()
++ {static} UserAccount login(String,String)
+}
+
+class com.lethimyhoa.models.UserAccount {
+- String username
+- String password
+- String role
+- boolean isSaved
+- String displayName
++ String getDisplayName()
++ void setDisplayName(String)
++ String getUsername()
++ void setUsername(String)
++ String getPassword()
++ void setPassword(String)
++ String getRole()
++ void setRole(String)
++ boolean isSaved()
++ void setSaved(boolean)
++ String toString()
+}
+
+
+class com.lethimyhoa.models.Customer {
+- String customerId
+- String customerName
+- String phoneNumber
+- String email
+- String address
++ String getCustomerId()
++ void setCustomerId(String)
++ String getCustomerName()
++ void setCustomerName(String)
++ String getPhoneNumber()
++ void setPhoneNumber(String)
++ String getEmail()
++ void setEmail(String)
++ String getAddress()
++ void setAddress(String)
++ String toString()
+}
+
+
+class com.lethimyhoa.models.OrderDetail {
+- String orderDetailId
+- String orderId
+- String productId
+- int quantity
+- double price
+- double coupon
+- double VAT
++ String getOrderDetailId()
++ void setOrderDetailId(String)
++ String getOrderId()
++ void setOrderId(String)
++ String getProductId()
++ void setProductId(String)
++ int getQuantity()
++ void setQuantity(int)
++ double getPrice()
++ void setPrice(double)
++ double getCoupon()
++ void setCoupon(double)
++ double getVAT()
++ void setVAT(double)
++ String toString()
+}
+
+
+class com.lethimyhoa.models.Order {
+- String orderId
+- String customerId
+- String employeeId
+- Date orderDate
++ String getOrderId()
++ void setOrderId(String)
++ String getCustomerId()
++ void setCustomerId(String)
++ String getEmployeeId()
++ void setEmployeeId(String)
++ Date getOrderDate()
++ void setOrderDate(Date)
++ String toString()
+}
+
+
+class com.lethimyhoa.models.Category {
+- String categoryId
+- String categoryName
++ String toString()
++ String getCategoryId()
++ void setCategoryId(String)
++ String getCategoryName()
++ void setCategoryName(String)
+}
+
+
+class com.lethimyhoa.models.DataWarehouse {
++ {static} ArrayList<Category> getCategories()
++ {static} ArrayList<Product> getProducts()
++ {static} ArrayList<Customer> getCustomers()
++ {static} ArrayList<Employee> getEmployees()
++ {static} ArrayList<Order> getOrders()
++ {static} ArrayList<OrderDetail> getOrderDetails()
+}
+
+
+
+java.io.Serializable <|.. com.lethimyhoa.models.Product
+java.io.Serializable <|.. com.lethimyhoa.models.UserAccount
+java.io.Serializable <|.. com.lethimyhoa.models.Customer
+java.io.Serializable <|.. com.lethimyhoa.models.OrderDetail
+java.io.Serializable <|.. com.lethimyhoa.models.Order
+java.io.Serializable <|.. com.lethimyhoa.models.Category
+@enduml

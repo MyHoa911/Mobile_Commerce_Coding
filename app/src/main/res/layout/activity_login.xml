@@ -58,6 +58,36 @@
             android:hint="@string/str_hint_password"
             android:inputType="textPassword" />
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_login_role" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_admin_right" />
+
+            <RadioButton
+                android:id="@+id/radEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_employee_right" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/chkSaveInfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_save_login" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

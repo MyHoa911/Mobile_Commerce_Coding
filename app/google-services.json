@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1098760632648",
+    "firebase_url": "https://k2341111emobile-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "k2341111emobile",
+    "storage_bucket": "k2341111emobile.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098760632648:android:feb1ac1a520ebdf8c8db7d",
+        "android_client_info": {
+          "package_name": "com.lethimyhoa.k2341111e_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgjWuqWdd3Q4iDh562ogKTbWQZO1-sL-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
